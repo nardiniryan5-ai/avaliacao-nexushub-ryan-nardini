@@ -16,3 +16,16 @@ print("status da bancada N1:", bancadas[0][0], "\nstatus da bancada N2:", bancad
 print("status da bancada S1:", bancadas[1][0], "\nstatus da bancada S2:", bancadas[1][1])
 print("Se status da bancada for 1 = ocupada, Se for 0 = livre.")
 
+with open("custos_cloud.csv", "r", encoding="utf-8") as arquivo:
+    cabecalho = arquivo.readline()
+    linha_dado_1 = arquivo.readline()
+    linha_dado_2 = arquivo.readline()
+    linha_dado_3 = arquivo.readline()
+    linha_dado_4 = arquivo.readline()
+
+print(cabecalho.strip(), "")
+print(linha_dado_1.strip(), "")
+print(linha_dado_2.strip(), "")
+print(linha_dado_3.strip(), "")
+print(linha_dado_4.strip(), "")
+
