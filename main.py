@@ -29,3 +29,8 @@ print(linha_dado_2.strip(), "")
 print(linha_dado_3.strip(), "")
 print(linha_dado_4.strip(), "")
 
+custos = (float(linha_dado_1.split(",")[1].strip()), float(linha_dado_2.split(",")[1].strip()), float(linha_dado_3.split(",")[1].strip()), float(linha_dado_4.split(",")[1].strip()))
+total_infraestrutura = sum(custos)
+
+print(f"\nPAINEL FINAL\nStartup: {startup['nome']}\nBancada alocada: Bancada N1\nTotal de infraestrutura Cloud: R$ {total_infraestrutura:.2f}")
+
